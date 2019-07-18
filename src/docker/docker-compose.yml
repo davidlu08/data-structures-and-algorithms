@@ -1,0 +1,9 @@
+version: '3'
+services:
+  container:
+    build: ./php/
+    image: davidlu08/data-structures-and-algorithms
+    container_name: data-structures-and-algorithms
+    volumes:
+      - ../../:/var/www/html
+      - ./php/php.ini-production:/usr/local/etc/php/php.ini
